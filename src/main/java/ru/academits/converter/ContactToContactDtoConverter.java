@@ -9,7 +9,6 @@ public class ContactToContactDtoConverter extends AbstractConverter<Contact, Con
     @Override
     public ContactDto convert(Contact source) {
         ContactDto c = new ContactDto();
-
         c.setId(source.getId());
         c.setFirstName(source.getFirstName());
         c.setLastName(source.getLastName());

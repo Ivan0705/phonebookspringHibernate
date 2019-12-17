@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import ru.academits.dao.ContactDao;
 import ru.academits.model.Contact;
 import ru.academits.model.ContactValidation;
+
 import java.util.List;
 
 @Service
@@ -68,9 +69,8 @@ public class ContactService {
 
     public void deleteContact(Long id) {
         Contact contact = contactDao.getById(id);
-        if(contact!=null){
-            contactDao.remove(contact);}
-
-
+        if (contact != null) {
+            contactDao.remove(contact);
+        }
     }
 }
